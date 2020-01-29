@@ -64,11 +64,9 @@ void Pet::setWeight(double newWeight) {
 
 // Misc
 string Pet::toString() {
-	// http://www.cplusplus.com/reference/string/to_string/
 	string outStr = "";
 	vector<string> labels = {"Name", "Age", "Type", "Weight"};
 	vector<string> values = {name, std::to_string(age), type, std::to_string(weight)};
-	
 	
 	for(int i = 0; i < labels.size(); ++i) {
 		outStr += labels[i] + ": " + values[i];
